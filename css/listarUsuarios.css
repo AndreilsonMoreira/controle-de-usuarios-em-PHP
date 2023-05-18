@@ -1,0 +1,207 @@
+body {
+    display: block;
+    text-align: center;
+    color: #757575;
+    padding: 1px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    margin: 2%;
+    min-width: 920px;
+    max-width: 1800px;
+    background-color: #EDEDED;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+header {
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+
+header h2 {
+    padding: 0px;
+    margin: 0px 0px 2px 0px;
+}
+
+.formBuscarUsuario {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    margin: 0.5%;
+
+}
+
+.campoBuscaUsuario {
+    width: 100%;
+    border: none;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campoBuscaUsuario input {
+    width: 88%;
+    height: 39px;
+    border: #E6E6E6 1px solid;
+    border-radius: 5px;
+
+    text-align: center;
+    color: #757575;
+    font-size: 16px;
+
+}
+
+.campoBuscaUsuario input:hover {
+    border: #757575 0.5px solid;
+    box-shadow: 0.2px 0.2px 0px #696969;
+}
+
+.campoBuscaUsuario button {
+    width: 10%;
+    height: 42px;
+    border: #3B99FF 2px solid;
+    background-color: #3B99FF;
+    color: #FCFCFC;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.campoBuscaUsuario button:hover {
+    background-color: #3A41FF;
+    border: #3A41FF 2px solid;
+    box-shadow: 5px 5px 3px #3B99FF;
+    font-weight: bold;
+}
+
+.tabela {
+    border-collapse: separate;
+    border-spacing: 0px;
+    background-color: #FCFCFC;
+    text-align: left;
+    padding: 0% 2% 2% 2%;
+    width: 100%;
+    margin: 1%;
+}
+
+.tabela tr {
+    padding: 10px;
+    margin: 10%;
+}
+
+.tabela td {
+    height: 30px;
+    padding: 1%;
+    border: none;
+    border-bottom: silver 0.5px solid;
+}
+
+#linhaTabela:hover {
+    background-color: #F5F5F5;
+    box-shadow: 8px 8px 4px #EDEDED;
+    color: #2B2B2B;
+
+}
+
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.cabecario {   
+    border-radius: 5px;
+    padding: 0px;
+    width: 99%;
+    margin: 1% 1% -1% 1%;
+    background-color: #FCFCFC;
+}
+
+.cabecario th {
+    width: 200px;
+    text-align: center;
+}
+
+#id {
+    padding: 1%;
+    padding-left: 0%;
+}
+
+#nome {
+    padding: 1%;
+    padding-left: 0%;
+}
+
+#telefone {
+    padding: 1%;
+    padding-left: 0%;
+}
+
+#email {
+    padding: 1%;
+    padding-right: 4%;
+    padding-left: 0%;
+}
+
+#editar {
+    padding: 1%;
+    padding-left: 20%;
+    padding-right: 0%;
+}
+
+#excluir {
+    padding: 1%;
+    padding-left: 8%;
+    margin-left: 0%;
+}
+
+#listaUsuarios {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 580px;
+}
+
+footer {
+    padding: 10px;
+}
+
+#btnEditar {
+    display:block;
+    padding: 7px 0px 7px 0px;
+    border: #3B99FF 2px solid;
+    background-color: #3B99FF;
+    color:#FCFCFC;   
+    margin-left: 0px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    
+}
+#btnEditar:hover {
+    background-color: #3A41FF;
+    border: #3A41FF 0.5px solid;
+    box-shadow: 5px 5px 3px #3B99FF;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+#btnExcluir {
+    display: block;
+    padding: 7px 0px 7px 0px;
+    border: #F55E5E 2px solid;
+    background-color: #F55E5E;
+    color:#FCFCFC;   
+    margin-left: 0px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    
+}
+#btnExcluir:hover {
+    background-color: #F50000;
+    border: #F50000 0.5px solid;
+    box-shadow: 5px 5px 3px #FF5527;
+    font-size: 9px;
+    font-weight: bold;
+}
