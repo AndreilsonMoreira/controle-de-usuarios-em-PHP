@@ -20,8 +20,14 @@ header {
 }
 
 header h2 {
-    padding: 0px;
+    padding: 2px 0px 20px 0px;
     margin: 0px 0px 2px 0px;
+    color: #3B99FF;
+    font-size: 30px;
+}
+
+header hr {
+    color: white;
 }
 
 .formBuscarUsuario {
@@ -31,7 +37,6 @@ header h2 {
     text-align: left;
     width: 100%;
     margin: 0.5%;
-
 }
 
 .campoBuscaUsuario {
@@ -51,7 +56,6 @@ header h2 {
     text-align: center;
     color: #757575;
     font-size: 16px;
-
 }
 
 .campoBuscaUsuario input:hover {
@@ -73,6 +77,31 @@ header h2 {
     background-color: #3A41FF;
     border: #3A41FF 2px solid;
     box-shadow: 5px 5px 3px #3B99FF;
+    font-weight: bold;
+}
+
+#adicionarUsuario {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 45px;
+}
+
+#adicionarUsuario #btnAdicionar {
+    width: 10%;    
+    height: 30px;
+    border: #69E0BF 2px solid;
+    background-color: #69E0BF;
+    color: #FCFCFC;
+    border-radius: 5px;
+    padding: 10px 1px 0px 1px;
+    font-size: 12px;
+}
+
+#adicionarUsuario #btnAdicionar:hover {
+    background-color: #0BA83E;
+    border: #0BA83E 2px solid;
+    box-shadow: 5px 5px 3px #69E0BF;
     font-weight: bold;
 }
 
@@ -110,7 +139,7 @@ a {
     color: #757575;
 }
 
-.cabecario {   
+.cabecario {
     border-radius: 5px;
     padding: 0px;
     width: 99%;
@@ -159,25 +188,22 @@ a {
 #listaUsuarios {
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 580px;
-}
-
-footer {
-    padding: 10px;
+    height: 550px;
 }
 
 #btnEditar {
-    display:block;
-    padding: 7px 0px 7px 0px;
+    display: block;
+    padding: 7px 1px 10px 0px;
     border: #3B99FF 2px solid;
     background-color: #3B99FF;
-    color:#FCFCFC;   
+    color: #FCFCFC;
     margin-left: 0px;
     border-radius: 5px;
     font-size: 10px;
     text-align: center;
-    
+
 }
+
 #btnEditar:hover {
     background-color: #3A41FF;
     border: #3A41FF 0.5px solid;
@@ -188,20 +214,24 @@ footer {
 
 #btnExcluir {
     display: block;
-    padding: 7px 0px 7px 0px;
+    padding: 7px 1px 10px 0px;
     border: #F55E5E 2px solid;
     background-color: #F55E5E;
-    color:#FCFCFC;   
+    color: #FCFCFC;
     margin-left: 0px;
     border-radius: 5px;
     font-size: 10px;
     text-align: center;
-    
 }
+
 #btnExcluir:hover {
     background-color: #F50000;
     border: #F50000 0.5px solid;
     box-shadow: 5px 5px 3px #FF5527;
     font-size: 9px;
     font-weight: bold;
+}
+
+footer {
+    padding: 10px;
 }

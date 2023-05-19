@@ -1,5 +1,5 @@
 <?php
-class buscarDados
+class dadosUsuarios
 {
    public function buscardados($dadoBusca){
     include_once('model/dados.php');
@@ -18,5 +18,13 @@ class buscarDados
             }
         }
         
+    }
+
+    public function cadastrarUsuario($dadoCadastro){
+        if(empty($dadoCadastro)){
+            return("Erro: campos vazios!!!");
+        }else{
+            return("usuário cadastrado!!!");
+        }        
     }
 };
