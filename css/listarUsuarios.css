@@ -15,8 +15,8 @@ body {
 
 header {
     width: 100%;
-    margin-top: 0%;
-    margin-bottom: 3%;
+    margin-top: -1%;
+    margin-bottom: 1%;
 }
 
 header h2 {
@@ -52,7 +52,6 @@ header hr {
     height: 39px;
     border: #E6E6E6 1px solid;
     border-radius: 5px;
-
     text-align: center;
     color: #757575;
     font-size: 16px;
@@ -233,5 +232,6 @@ a {
 }
 
 footer {
+    margin-top: 2%;
     padding: 10px;
 }

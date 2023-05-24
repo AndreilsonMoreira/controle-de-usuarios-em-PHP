@@ -10,13 +10,13 @@ body {
     max-width: 1800px;
     background-color: #EDEDED;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: auto;    
 }
 
 header {
     width: 100%;
-    margin-top: 0%;
-    margin-bottom: 3%;
+    margin-top: -1%;
+    margin-bottom: 1%;
 }
 
 header h2 {
@@ -31,39 +31,137 @@ header hr {
 }
 
 form {
-    width: 80%;
-    
-    border: none;
-    border-radius: 5px;
-    margin-left: 10%;
-    padding: 2%;    
-}
-
-form div {
     width: 100%;
-    padding: 5px 0px 3px 0px; 
-    margin-top: 2px;  
+    height: 100%;  
+    border: none;  
+    margin: 1% 10% 10% 0%;
 }
 
-form div input {
-    width: 80%;
-    background-color: white;
-    border: none;
-    padding: 10px;    
-    align-items: center;
-    border-bottom: #EDEDED 1px solid;
+form div {    
+    width: 100%;   
+    margin-top: 2px;
+    margin-left: 2%;
 }
+
+form div input {     
+    width: 100%; 
+    height: 25%;  
+    color: #757575;
+    background-color: #FCFCFC;
+    border: none;
+    border-radius: 5px;    
+}
+
+form div input:hover {
+    border: #757575 0.5px solid;
+    box-shadow: 0.2px 0.2px 0px #696969; 
+}
+
+form div select:hover {
+    border: #757575 0.5px solid;
+    box-shadow: 0.2px 0.2px 0px #696969; 
+}
+
 form div select {
     color: #757575;
     text-align: center;
-    width: 81%;
-    background-color: white;
+    width: 100%;
+    background-color: #FCFCFC;
     border: none;
-    padding: 10px;    
-    align-items: center;
-    border-bottom: #EDEDED 1px solid;    
+    padding: 4%;
+    border-radius: 5px;
+    margin-left: 2%;      
+}
+
+#camposForme{
+    width: 100%;
+    height: 10%;
+    display: flex;    
+    flex-direction: row;
+}
+
+#camposForme #matricula {
+    width: 50%;
+    padding: 2%;
+}
+
+#camposForme #nomeUsuario {
+    margin-left: -40%;
+    width: 90%;
+    padding: 2%;
+}
+
+#camposForme #telefoneUsuario {
+    margin-left: 20%;
+    width: 70%;
+    padding: 2%;
+}
+
+#camposForme #emailUsuario {
+    margin-left: -20%;
+    width: 70%;
+    padding: 2%;
+}
+
+#camposForme #enderecoUsuario {
+   width: 77%;
+   padding: 1% 0% 1% 0.5%;
+
+}
+
+#camposForme #enderecoNumero {
+    margin-left: 20%; 
+    width: 70%;
+    padding: 2%;   
+}
+
+#camposForme #enderecoBairro {
+    margin-left: -20%;    
+    width: 70%;
+    padding: 2%;   
+}
+
+#camposFormeSelect{
+    width: 80%;
+    display: flex;    
+    flex-direction: row;
+    margin-left: 13%;      
+}
+
+#camposForme #enderecoCep{
+    margin-left: -5%;
+    width: 86%;
+    padding: 4.3%;
+}
+
+#adicionarUsuario {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+}
+
+#adicionarUsuario button {
+    width: 76%;    
+    height: 30px;
+    border: #69E0BF 2px solid;
+    background-color: #69E0BF;
+    color: #FCFCFC;
+    border-radius: 5px;
+    padding: 10px 0px 25px 0px;
+    font-size: 15px;
+    margin-left: 2%;
+}
+
+#adicionarUsuario button:hover {
+    background-color: #0BA83E;
+    border: #0BA83E 2px solid;
+    box-shadow: 5px 5px 3px #69E0BF;
+    font-weight: bold;
 }
 
 footer {
+    margin-top: 23%;
     padding: 10px;
 }
