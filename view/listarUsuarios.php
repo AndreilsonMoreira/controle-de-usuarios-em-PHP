@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relação de usuários</title>
-    <link href="css/listarUsuarios.css" rel="stylesheet" type="text/css" />
+    <link href="../css/listarUsuarios.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             <h2>Relação de usuários</h2>
             <hr />
         </header>
-        <form method="post" action="index.php" class="formBuscarUsuario">
+        <form method="post" action="listarUsuarios.php" class="formBuscarUsuario">
             <div class="campoBuscaUsuario">
                 <label for="busca"></label>
                 <input type="text" id="busca" name="busca" placeholder="Digite um id ou nome do usuário para a busca" maxlength="50" />
@@ -26,7 +26,7 @@
 
         </form>
         <div id=adicionarUsuario>
-            <a href='view/adicionarUsuario.php' id='btnAdicionar'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+            <a href='adicionarUsuarios.php' id='btnAdicionar'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
                     <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
                     <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
                 </svg> Novo usuário </a>
@@ -48,7 +48,7 @@
                 if (isset($_POST['busca'])) {
                     $buscar = $_POST['busca'];
                 }
-                include_once('controller/dadosUsuarios.php');
+                include_once('../controller/dadosUsuarios.php');
                 $Dados = new dadosUsuarios();
                 $Entrada = $Dados->buscardados($buscar);
                 //print_r($Entrada);
@@ -70,7 +70,7 @@
                    <td>$nome</td>
                    <td>$telefone</td>
                    <td>$email</td>
-                   <td '><a href='view/adicionarUsuario.php?id=$id' id='btnEditar'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>
+                   <td '><a href='adicionarUsuarios.php?id=$id' id='btnEditar'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>
                    <path d='M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z'/>
                  </svg> Editar</a></td>
                    <td ><a href='#' id='btnExcluir'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-trash3' viewBox='0 0 16 16'>

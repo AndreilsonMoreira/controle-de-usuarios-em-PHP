@@ -2,7 +2,7 @@
 class dadosUsuarios
 {
    public function buscardados($dadoBusca){
-    include_once('model/dados.php');
+    include_once('../model/dados.php');
        $Dados = new dados();
         $dadoBusca = trim($dadoBusca);
         if (empty($dadoBusca)) {
@@ -16,8 +16,7 @@ class dadosUsuarios
             } else {
                 return ($Entrada);
             }
-        }
-        
+        }        
     }
 
     public function cadastrarUsuario($dadoCadastro){
